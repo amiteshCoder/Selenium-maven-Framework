@@ -31,23 +31,28 @@ public class TestBase {
 	public static void getBrowser(String myBrowser) {
 		if (System.getProperty("os.name").contains("Window")) {
 			log.info("=============Session Starts==========");
+			log.info(System.getProperty("os.name"));
+			
 			if (myBrowser.equalsIgnoreCase("firefox")) {
 				System.out.println(System.getProperty("user.dir"));
 				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir") + "\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
+				log.info("=============Browser opened==========");
 				driver.manage().window().maximize();
 				driver.navigate().to(TestBase.readConfigFile("URL4"));
-				log.info("=============Application Starts==========");
+				log.info("=============Navigated to URL==========");
 		 
 			} else if (myBrowser.equalsIgnoreCase("chrome")) {
-				// https://chromedriver.storage.googleapis.com/index.html
+				System.out.println(System.getProperty("user.dir"));
 				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
+				log.info("=============Browser opened==========");
 				driver.manage().window().maximize();
 				driver.navigate().to(TestBase.readConfigFile("URL4"));
-				log.info("=============Application Starts==========");
+				log.info("=============Navigated to URL==========");
 				
 			}
+			
 		} else if (System.getProperty("os.name").contains("Mac")) {
 			log.info("=============Session Starts==========");
 			log.info(System.getProperty("os.name"));
@@ -56,25 +61,27 @@ public class TestBase {
 				System.out.println(System.getProperty("user.dir"));
 				System.setProperty("webdriver.gecko.driver" , System.getProperty("user.dir")+"/executables/geckodriver");
 				driver = new FirefoxDriver();
-				log.info("=============Application Starts==========");
+				log.info("=============Browser opened==========");
 				driver.manage().window().fullscreen();
 				driver.navigate().to(TestBase.readConfigFile("URL4"));
+				log.info("=============Navigated to URL==========");
 			
 			} else if (myBrowser.equalsIgnoreCase("chrome")) {
 				log.info(System.getProperty("user.dir"));
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/executables/chromedriver");
 				driver = new ChromeDriver();
-				log.info("=============Application Starts==========");
-				driver.manage().window().fullscreen();
 				log.info("=============Browser opened==========");
+				driver.manage().window().fullscreen();
 				driver.navigate().to(TestBase.readConfigFile("URL4"));
 				log.info("=============Navigated to URL==========");
 				
 			} else if(myBrowser.equalsIgnoreCase("safari")) {
 				driver = new SafariDriver();
-				log.info("=============Application Starts==========");
+				log.info("=============Browser opened==========");
 				//driver.manage().window().fullscreen();
 				driver.navigate().to(TestBase.readConfigFile("URL4"));
+				log.info("=============Navigated to URL==========");
+
 			}
 		}
 	}
@@ -145,6 +152,7 @@ public class TestBase {
 	public static String readConfigFile(String data) {
 		loadConfigFile();
 		prop.get(data);
+		log.info("=============Reading config file==========");
 		return prop.getProperty(data);
 	}
 	
