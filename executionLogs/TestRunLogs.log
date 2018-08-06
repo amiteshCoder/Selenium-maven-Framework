@@ -1,0 +1,10 @@
+2018-08-06 19:42:05.084 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:52)] - =============Session Starts==========
+2018-08-06 19:42:05.095 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:53)] - Mac OS X
+2018-08-06 19:42:05.095 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:64)] - /Users/amiteshshukla/Documents/Work/mac-eclipse-space/seleniumMaven
+2018-08-06 19:42:06.776 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:67)] - =============Application Starts==========
+2018-08-06 19:42:07.010 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:69)] - =============Browser opened==========
+2018-08-06 19:42:10.610 INFO [main] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:71)] - =============Navigated to URL==========
+2018-08-06 19:42:10.623 INFO [TestNG-test=login test in Chrome-1] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:52)] - =============Session Starts==========
+2018-08-06 19:42:10.624 INFO [TestNG-test=login test in Chrome-1] [utilities.TestBase] [getBrowser] [utilities.TestBase.getBrowser(TestBase.java:53)] - Mac OS X
+2018-08-06 19:42:18.754 INFO [TestNG-test=login test in Chrome-1] [utilities.TestBase] [closeBrowser] [utilities.TestBase.closeBrowser(TestBase.java:122)] - =============Browser closed==========
+2018-08-06 19:42:18.755 INFO [TestNG-test=login test in Chrome-1] [utilities.TestBase] [closeBrowser] [utilities.TestBase.closeBrowser(TestBase.java:123)] - =============Session Ends==========

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="utilities.ExtentReporterNG"/>
+    <listener class-name="utilities.TestListenerClass"/>
+  </listeners>
+  <test thread-count="3" verbose="0" name="login test in Chrome(failed)" parallel="classes">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.CiviCrm.Practice.Login">
+        <methods>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="initialize"/>
+          <include name="loggingIn"/>
+        </methods>
+      </class> <!-- com.CiviCrm.Practice.Login -->
+    </classes>
+  </test> <!-- login test in Chrome(failed) -->
+  <test thread-count="3" verbose="0" name="Cretae a new mail(failed)" parallel="classes">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.CiviCrm.Practice.NewMailling">
+        <methods>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="createMail"/>
+          <include name="initialze"/>
+        </methods>
+      </class> <!-- com.CiviCrm.Practice.NewMailling -->
+    </classes>
+  </test> <!-- Cretae a new mail(failed) -->
+  <test thread-count="3" verbose="0" name="Create a new student contact(failed)" parallel="classes">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.CiviCrm.Practice.NewStudentContact">
+        <methods>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="intialze"/>
+          <include name="loginInSite"/>
+          <include name="createNewStudent"/>
+        </methods>
+      </class> <!-- com.CiviCrm.Practice.NewStudentContact -->
+    </classes>
+  </test> <!-- Create a new student contact(failed) -->
+</suite> <!-- Failed suite [Suite] -->
