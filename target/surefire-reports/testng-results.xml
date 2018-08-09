@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14897" started-at="2018-08-06T19:10:09Z" finished-at="2018-08-06T19:10:24Z">
+  <suite name="Suite" duration-ms="16756" started-at="2018-08-09T16:07:30Z" finished-at="2018-08-09T16:07:47Z">
     <groups>
     </groups>
-    <test name="login test in Chrome" duration-ms="14897" started-at="2018-08-06T19:10:09Z" finished-at="2018-08-06T19:10:24Z">
+    <test name="login test in Chrome" duration-ms="16756" started-at="2018-08-09T16:07:30Z" finished-at="2018-08-09T16:07:47Z">
       <class name="com.CiviCrm.Practice.Login">
-        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.CiviCrm.Practice.Login@2b662a77]" name="getBrowser" is-config="true" duration-ms="5473" started-at="2018-08-06T19:10:09Z" finished-at="2018-08-06T19:10:14Z">
+        <test-method status="PASS" signature="getBrowser(java.lang.String)[pri:0, instance:com.CiviCrm.Practice.Login@57a3af25]" name="getBrowser" is-config="true" duration-ms="6886" started-at="2018-08-09T16:07:30Z" finished-at="2018-08-09T16:07:37Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBrowser -->
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.CiviCrm.Practice.Login@2b662a77]" name="initialize" is-config="true" duration-ms="673" started-at="2018-08-06T19:10:14Z" finished-at="2018-08-06T19:10:15Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.CiviCrm.Practice.Login@57a3af25]" name="initialize" is-config="true" duration-ms="1240" started-at="2018-08-09T16:07:37Z" finished-at="2018-08-09T16:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="loggingIn()[pri:0, instance:com.CiviCrm.Practice.Login@2b662a77]" name="loggingIn" duration-ms="8640" started-at="2018-08-06T19:10:15Z" finished-at="2018-08-06T19:10:24Z">
+        <test-method status="PASS" signature="loggingIn()[pri:0, instance:com.CiviCrm.Practice.Login@57a3af25]" name="loggingIn" duration-ms="8512" started-at="2018-08-09T16:07:39Z" finished-at="2018-08-09T16:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingIn -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.CiviCrm.Practice.Login@2b662a77]" name="closeBrowser" is-config="true" duration-ms="96" started-at="2018-08-06T19:10:24Z" finished-at="2018-08-06T19:10:24Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.CiviCrm.Practice.Login@57a3af25]" name="closeBrowser" is-config="true" duration-ms="90" started-at="2018-08-09T16:07:47Z" finished-at="2018-08-09T16:07:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
