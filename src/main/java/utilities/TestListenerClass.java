@@ -2,12 +2,19 @@ package utilities;
 
 import java.io.IOException;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+
+import utilities.MonitoringMail;
+import utilities.TestConfig;
+import utilities.ZippingFile;
 
 public class TestListenerClass implements ITestListener{
 	
