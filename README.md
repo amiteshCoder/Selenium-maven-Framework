@@ -1,6 +1,6 @@
 # selenium-maven-framework
 
-How to run the framework through IDE(Eclipse)
+# How to run the framework through IDE(Eclipse)
 
 1.Fork the repo on your local.
 
@@ -22,10 +22,13 @@ How to run the framework through IDE(Eclipse)
 
 10.Then select the Testng.xml in the project and run as "Testng Suite".
 
-#Running the framework using maven
+
+# Running the framework using maven
 
 1.Fork the repo on your local.
 
 2.Open cmd/powershell and navigate to the repo.
 
 3.Then run the command "mvn clean install"
+
+
