@@ -32,3 +32,10 @@
 3.Then run the command "mvn clean install"
 
 
+# Report of the test execution
+
+1.After running the suite referesh the project
+
+2.Go to Test-output -->Suite.
+
+3.Look for the ExtentReportsTestNG file and open it.
