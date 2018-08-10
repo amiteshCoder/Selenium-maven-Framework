@@ -20,4 +20,12 @@ How to run the framework through IDE(Eclipse)
 
 9.Wait for the project to build(progress bar is shown on right bottom of the screen)
 
-10.Then select the Testng.xml in the project and run as "Testng Suite"
+10.Then select the Testng.xml in the project and run as "Testng Suite".
+
+#Running the framework using maven
+
+1.Fork the repo on your local.
+
+2.Open cmd/powershell and navigate to the repo.
+
+3.Then run the command "mvn clean install"
