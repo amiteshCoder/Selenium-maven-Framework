@@ -39,3 +39,9 @@
 2.Go to Test-output -->Suite.
 
 3.Look for the ExtentReportsTestNG file and open it.
+
+# Logs of of the test execution
+
+1.Go to executionLogs folder.
+
+2.Look for the TestRunlogs.log file and open it.
