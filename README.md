@@ -45,3 +45,11 @@
 1.Go to executionLogs folder.
 
 2.Look for the TestRunlogs.log file and open it.
+
+# Screen shot of the failed test case.
+
+1.Referesh the folder after run.
+
+2.Go to ScreenShot folder.
+
+3.As per the date and name of the method failed, check for the screenshot name
