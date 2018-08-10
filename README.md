@@ -52,4 +52,4 @@
 
 2.Go to ScreenShot folder.
 
-3.As per the date and name of the method failed, check for the screenshot name
+3.As per the date and name of the method failed, check for the screenshot name.
