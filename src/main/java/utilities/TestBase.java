@@ -131,6 +131,7 @@ public class TestBase {
 				driver.quit();
 				log.info("=============Browser closed==========");
 				log.info("=============Session Ends==========");
+				log.info("Test compeleted on: " + DateTime.now());
 			} else {
 				log.info("=============No WebDriver Session Found==========");
 			}
