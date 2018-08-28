@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.joda.time.DateTime;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -30,6 +31,7 @@ public class TestBase {
 	@Parameters({"myBrowser"})
 	public static void getBrowser(String myBrowser) {
 		if (System.getProperty("os.name").contains("Window")) {
+			log.info("Test Started on: " + DateTime.now());
 			log.info("=============Session Starts==========");
 			log.info(System.getProperty("os.name"));
 			
@@ -54,6 +56,7 @@ public class TestBase {
 			}
 			
 		} else if (System.getProperty("os.name").contains("Mac")) {
+			log.info("Test Started on: " + DateTime.now());
 			log.info("=============Session Starts==========");
 			log.info(System.getProperty("os.name"));
 			
