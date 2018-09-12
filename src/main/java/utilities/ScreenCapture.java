@@ -31,8 +31,8 @@ public class ScreenCapture extends TestBase {
 		
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		screenShotName = methodName+"_"+year+"_"+date+"_"
-		+(month+1)+"_"+day+"_"+min+"_" +sec+".png";
+		screenShotName = methodName+"_"+date+"-"+(month+1)+"-"
+		+year+"_"+day+":"+min+"_"+".png";
 		FileUtils.copyFile(source, new File("./ScreenShots/"+ screenShotName));
 		
 		/*Date d = new Date();
