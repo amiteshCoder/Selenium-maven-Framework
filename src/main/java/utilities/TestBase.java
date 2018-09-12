@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
@@ -30,6 +31,7 @@ public class TestBase {
 	// Parameter will get browser from testng.xml on which browser test to run
 	@Parameters({"myBrowser"})
 	public static void getBrowser(String myBrowser) {
+		log.info("==================================================");
 		if (System.getProperty("os.name").contains("Window")) {
 			log.info("Test Started on: " + DateTime.now());
 			log.info("=============Session Starts==========");
@@ -125,12 +127,17 @@ public class TestBase {
 //		  
 //			}
 	   
+	   
+	  
+	   //@AfterTest
 	   @AfterClass
 		public static void closeBrowser() {
 			if (driver != null) {
 				driver.quit();
 				log.info("=============Browser closed==========");
 				log.info("=============Session Ends==========");
+				log.info("Test compeleted on: " + DateTime.now());
+				log.info("==================================================");
 			} else {
 				log.info("=============No WebDriver Session Found==========");
 			}
